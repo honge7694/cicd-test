@@ -5,8 +5,8 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### mysql
-application-mysql.properties
+### mysql ###
+src/main/resources/application-mysql.properties
 
 ### STS ###
 .apt_generated
