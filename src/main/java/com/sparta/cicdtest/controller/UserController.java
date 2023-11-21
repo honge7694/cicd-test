@@ -1,6 +1,5 @@
 package com.sparta.cicdtest.controller;
 
-import com.sparta.cicdtest.dto.RequestDto;
 import com.sparta.cicdtest.dto.UserRequestDto;
 import com.sparta.cicdtest.dto.UserResponseDto;
 import com.sparta.cicdtest.service.UserService;
