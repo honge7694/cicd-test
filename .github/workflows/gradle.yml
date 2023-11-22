@@ -56,11 +56,11 @@ jobs:
         aws-region: ${{ env.AWS_REGION }}
 
     # 데이터베이스 설정
-#    - name: Configure database
-#      run: |
-#        echo "spring.datasource.url=${{ secrets.RDS_HOSTNAME }}" >> application.properties
-#        echo "spring.datasource.username=${{ secrets.RDS_USERNAME }}" >> application.properties
-#        echo "spring.datasource.password=${{ secrets.RDS_PASSWORD }}" >> application.properties
+    - name: Configure database
+      run: |
+        echo "spring.datasource.url=${{ secrets.RDS_HOSTNAME }}" >> src/main/resources/application.properties
+        echo "spring.datasource.username=${{ secrets.RDS_USERNAME }}" >> src/main/resources/application.properties
+        echo "spring.datasource.password=${{ secrets.RDS_PASSWORD }}" >> src/main/resources/application.properties
         
     # AWS S3에 업로드
     - name: Upload to AWS S3
