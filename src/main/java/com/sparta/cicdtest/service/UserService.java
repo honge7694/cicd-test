@@ -13,7 +13,6 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-
     public UserResponseDto createUser(UserRequestDto requestDto) {
         User user = new User(requestDto);
         userRepository.save(user);
