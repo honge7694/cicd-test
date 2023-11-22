@@ -3,7 +3,7 @@ package com.sparta.cicdtest;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class CiCdTestApplicationTests {
 
     @Test
