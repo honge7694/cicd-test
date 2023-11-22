@@ -54,6 +54,13 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
+
+    # 데이터베이스 설정
+#    - name: Configure database
+#      run: |
+#        echo "spring.datasource.url=${{ secrets.RDS_HOSTNAME }}" >> application.properties
+#        echo "spring.datasource.username=${{ secrets.RDS_USERNAME }}" >> application.properties
+#        echo "spring.datasource.password=${{ secrets.RDS_PASSWORD }}" >> application.properties
         
     # AWS S3에 업로드
     - name: Upload to AWS S3
