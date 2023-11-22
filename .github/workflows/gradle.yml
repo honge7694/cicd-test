@@ -3,11 +3,12 @@ name: Java CI with Gradle & Deploy to EC2
 # main 브런치에 push가 되면 아래의 flow가 실행됩니다.
 on:
   push:
-    branches: [ "master" ]
+    branches: 
+    	- master
    
 # flow에서 사용할 변수 같은 느낌입니다.
 env:
-  AWS_REGION:ap-northeast-2
+  AWS_REGION: ap-northeast-2
   S3_BUCKET_NAME: sparta-github-actions-s3-bucket
   CODE_DEPLOY_APPLICATION_NAME: my-codedeply-app
   CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: my-codedeploy-deployment-group
@@ -22,7 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
 
-	# 아래의 flow들이 차례대로 실행됩니다.
+
+    # 아래의 flow들이 차례대로 실행됩니다.
     steps:
     # 1) 기본 체크아웃
     - name: Checkout
