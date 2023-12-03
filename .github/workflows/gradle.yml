@@ -74,7 +74,7 @@ jobs:
       # CodeDeploy에 배포 요청
       - name: Code Deploy Deployment Request
         run: |
-          aws deploy create-deployment --application-name my-cdoedeply-app \ 
+          aws deploy create-deployment --application-name my-codedeply-app \ 
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --deployment-group-name my-codedeploy-deployment-group \
             --s3-location bucket=ci-cd-github-actions-s3-bucket,bundleType=zip,key=seniors-build.zip
