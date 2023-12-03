@@ -76,7 +76,7 @@ jobs:
         run: |
           aws deploy create-deployment --application-name seniors \
             --deployment-config-name CodeDeployDefault.OneAtATime \
-            --deployment-group-name seniors \
+            --deployment-group-name my-cdoedeply-app \
             --s3-location bucket=ci-cd-github-actions-s3-bucket,bundleType=zip,key=seniors-build.zip
 
       # 배포 결과 Slack 알람 전송
