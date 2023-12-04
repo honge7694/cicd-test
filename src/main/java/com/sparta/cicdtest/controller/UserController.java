@@ -4,10 +4,7 @@ import com.sparta.cicdtest.dto.UserRequestDto;
 import com.sparta.cicdtest.dto.UserResponseDto;
 import com.sparta.cicdtest.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
@@ -19,5 +16,10 @@ public class UserController {
     @PostMapping("/")
     public UserResponseDto createUser(@RequestBody UserRequestDto requestDto) {
         return userService.createUser(requestDto);
+    }
+
+    @GetMapping("/")
+    public String asdf() {
+        return "hello world";
     }
 }
