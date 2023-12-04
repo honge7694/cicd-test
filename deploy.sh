@@ -1,8 +1,8 @@
 # 작업 디렉토리를 /home/ubuntu으로 변경
 cd /home/ubuntu
 
-# 환경변수 DOCKER_APP_NAME을 seniors로 설정
-DOCKER_APP_NAME=seniors
+# 환경변수 DOCKER_APP_NAME 설정
+DOCKER_APP_NAME=honge7694
 
 # 실행 중인 blue가 있는지 확인
 # 프로젝트의 실행 중인 컨테이너를 확인하고, 해당 컨테이너가 실행 중인지를 EXIST_BLUE 변수에 저장
