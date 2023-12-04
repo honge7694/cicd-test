@@ -6,7 +6,7 @@ build/
 !**/src/test/**/build/
 
 ### mysql ###
-src/main/resources/application-mysql.properties
+src/main/resources/application-deploy.yml
 
 ### STS ###
 .apt_generated
